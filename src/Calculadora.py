@@ -5,3 +5,6 @@ class Calculadora:
 
     def divisao(self, a, b):
         return a / b
+
+    def potencia(self, a, b):
+        return a ** b
