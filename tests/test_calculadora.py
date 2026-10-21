@@ -1,5 +1,7 @@
 import pytest
+
 from src.Calculadora import Calculadora
+
 
 @pytest.fixture 
 def calculadora():
