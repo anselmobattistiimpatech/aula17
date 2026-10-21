@@ -3,12 +3,14 @@ import pytest
 from src.Calculadora import Calculadora
 
 
-@pytest.fixture 
+@pytest.fixture
 def calculadora():
     return Calculadora()
 
+
 def test_soma(calculadora):
     assert calculadora.soma(1, 1) == 2
+
 
 def test_divisao(calculadora):
     calculadora = Calculadora()

@@ -1,5 +1,4 @@
 class Calculadora:
-
     def soma(self, a, b):
         return a + b
 
@@ -22,3 +21,10 @@ class Calculadora:
         if not lista:
             raise ValueError("Lista não pode ser vazia")
         return sum(lista) / len(lista)
+
+    def soma_lista(self, lista: list[float]) -> float:
+        if not isinstance(lista, list):
+            raise TypeError("Lista deve ser uma lista")
+        if not lista:
+            raise ValueError("Lista não pode ser vazia")
+        return sum(lista)
