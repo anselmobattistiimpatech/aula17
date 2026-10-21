@@ -28,3 +28,7 @@ def test_positivo_menos1(calculadora):
 def test_positivo_zerp(calculadora):
     assert calculadora.positivo(-1) is False
     assert calculadora.positivo(0) is False
+
+
+def test_senha(calculadora):
+    assert calculadora.recuperarSemha("abc156456") == "abc156456"
