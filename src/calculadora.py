@@ -38,4 +38,3 @@ class Calculadora:
         salt = bcrypt.gensalt()
         hashed = bcrypt.hashpw(data.encode(), salt)
         return hashed.decode()
-        
