@@ -15,4 +15,10 @@ class Calculadora:
         if a < 0:
             raise ValueError("Numero deve ser positivo")
         return a**0.5
-    
+
+    def media(self, lista: list[float]) -> float:
+        if not isinstance(lista, list):
+            raise TypeError("Lista deve ser uma lista")
+        if not lista:
+            raise ValueError("Lista não pode ser vazia")
+        return sum(lista) / len(lista)
