@@ -14,3 +14,8 @@ class Calculadora:
         if a < 0:
             raise ValueError("Numero deve ser positivo")
         return a**0.5
+
+    def positivo(self, a: float) -> bool:
+        if not isinstance(a, (int, float)):
+            raise TypeError("Numero deve ser um float")
+        return a > 0
