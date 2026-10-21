@@ -24,4 +24,4 @@ def test_positivo_menos1(calculadora):
 
 def test_positivo_zerp(calculadora):
     assert calculadora.positivo(-1) is False
-    assert calculadora.positivo(0) is True
+    assert calculadora.positivo(0) is False
