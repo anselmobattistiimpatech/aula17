@@ -7,3 +7,5 @@ repos:
   - id: ruff-check
   # Run the formatter.
   - id: ruff-format
+  # Verify leaked data
+  - id: gitleaks

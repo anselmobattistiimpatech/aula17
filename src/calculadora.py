@@ -1,3 +1,6 @@
+import bcrypt
+
+
 class Calculadora:
     def soma(self, a, b):
         return a + b
@@ -28,3 +31,11 @@ class Calculadora:
         if not lista:
             raise ValueError("Lista não pode ser vazia")
         return sum(lista)
+
+    def criptografa(self, data: str) -> str:
+        if not isinstance(data, str):
+            raise TypeError("Data deve ser uma string")
+        salt = bcrypt.gensalt()
+        hashed = bcrypt.hashpw(data.encode(), salt)
+        return hashed.decode()
+        
