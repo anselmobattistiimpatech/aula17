@@ -15,7 +15,9 @@ class Calculadora:
             raise ValueError("Numero deve ser positivo")
         return a**0.5
 
-    def positivo(self, a: float) -> bool:
-        if not isinstance(a, (int, float)):
-            raise TypeError("Numero deve ser um float")
-        return a > 0
+    def Positivo(self, a: str) -> bool:
+        return a * 2
+
+    def recuperarSemha(self, password: str) -> str:
+        password = "abc156456"
+        return password

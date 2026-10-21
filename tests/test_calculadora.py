@@ -16,11 +16,14 @@ def test_divisao(calculadora):
     calculadora = Calculadora()
     assert calculadora.divisao(1, 1) == 1
 
+
 def test_positivo(calculadora):
     assert calculadora.positivo(1) is True
 
+
 def test_positivo_menos1(calculadora):
     assert calculadora.positivo(-1) is False
+
 
 def test_positivo_zerp(calculadora):
     assert calculadora.positivo(-1) is False
