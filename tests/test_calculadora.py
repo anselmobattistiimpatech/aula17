@@ -18,5 +18,10 @@ def test_divisao(calculadora):
 
 def test_positivo(calculadora):
     assert calculadora.positivo(1) is True
+
+def test_positivo_menos1(calculadora):
+    assert calculadora.positivo(-1) is False
+
+def test_positivo_zerp(calculadora):
     assert calculadora.positivo(-1) is False
     assert calculadora.positivo(0) is True
